@@ -13,7 +13,7 @@ function draw() {
     
 
 }
-        function mouseClicked() 
+function mouseClicked() 
     {
         
         if (value==0)
@@ -25,3 +25,8 @@ function draw() {
             value = 0;
         }
     }
+function mouseWheel(event)
+{
+    
+    value+=event.delta;
+}
